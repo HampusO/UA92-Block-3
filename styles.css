@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 70px; /* Avoid navbar overlap */
+  background-color: black; /* Black background */
+  color: gold; /* Gold text */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensure content fills the space and pushes the footer down */
+.content {
+  flex: 1;
+  color: gold; /* Ensures all content text is gold */
+}
+
+/* Navbar */
+.navbar {
+  background-color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.navbar-brand {
+  color: gold !important;
+}
+.navbar-brand:hover {
+  color: gold !important;
+}
+.navbar-nav .nav-link {
+  color: gold !important;
+  padding: 0.5rem 1rem;
+}
+.navbar-nav .nav-link:hover {
+  color: gold; /* Highlight on hover */
+}
+
+/* Ensure Navbar collapses properly on small screens */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-toggler-icon {
+  filter: invert(100%); /* Makes the navbar toggler icon visible */
+}
+
+/* Header (Hero Section) */
+.hero-section {
+  background-color: black; /* Black background */
+  color: gold; /* Gold text */
+  text-align: center;
+  padding: 50px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero-section p {
+  font-size: 1.2rem;
+}
+.explore-btn {
+  background-color: gold;
+  color: black;
+  border: none;
+}
+.explore-btn:hover {
+  background-color: gold;
+  color: black;
+}
+
+/* Sections */
+.featured-section {
+  background-color: black;
+  color: gold;
+  padding: 40px 20px;
+}
+.featured-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: gold;
+}
+.featured-section p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: gold;
+}
+.card {
+  background-color: black;
+  border: 1px solid gold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: gold;
+}
+.card:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+}
+.card img {
+  border-radius: 5px;
+  max-width: 100%;
+  width: 100%; /* Ensures all images are wider */
+  height: 500px; /* Sets a uniform height for all images */
+  object-fit: cover; /* Crops and scales the image to fit the container */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer - pinned to bottom */
+.footer {
+  background-color: black;
+  color: gold;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+  width: 100%;
+}
+.footer a {
+  color: gold;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: gold;
+}
+
+/* Forms */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  color: gold;
+}
+form button {
+  background-color: gold;
+  color: black;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: gold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+      font-size: 1.8rem;
+  }
+  .hero-section p {
+      font-size: 1rem;
+  }
+  .featured-section h2 {
+      font-size: 1.5rem;
+  }
+  .card img {
+      height: 300px; /* Adjusts image height for smaller screens */
+      width: 100%; /* Ensures images remain wider on mobile */
+  }
+}
